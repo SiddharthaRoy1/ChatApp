@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:8000/messages', (data) => {
+        $.get('https://chatapp1234567.herokuapp.com/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post('http://localhost:8000/messages', message)
+        $.post('https://chatapp1234567.herokuapp.com/messages', message)
     }
 </script>
