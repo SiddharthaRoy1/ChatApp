@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('https://chatapp1234567.herokuapp.com/messages', (data) => {
+        $.get('https://nodetalk.netlify.app/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post('https://chatapp1234567.herokuapp.com/messages', message)
+        $.post('https://nodetalk.netlify.app/messages', message)
     }
 </script>
