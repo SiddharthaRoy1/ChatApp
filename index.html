@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('https://nodetalk.netlify.app/messages', (data) => {
+        $.get('https://nodetalks.onrender.com/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post('https://nodetalk.netlify.app/messages', message)
+        $.post('https://nodetalks.onrender.com/messages', message)
     }
 </script>
